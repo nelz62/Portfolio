@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Index.css" />
+    <style>
+      .hidden {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div id="dotArea">
+        <h2>✦ click the dot to see my Portfolio ✦</h2>
+
+        <div class="dot-wrapper">
+          <div class="dot-container" id="dotContainer">
+            <div
+              class="moving-dot"
+              id="movingDot"
+              role="button"
+              tabindex="0"
+              aria-label="Open portfolio"
+            ></div>
+          </div>
+        </div>
+
+        <div class="click-hint">
+          <i class="fas fa-circle" style="font-size: 0.5rem"></i> click!
+        </div>
+      </div>
+
+      <div class="portfolio hidden" id="portfolioPanel">
+        <div
+          style="
+            display: flex;
+            justify-content: flex-end;
+            padding: 0.5rem 1rem 0;
+          "
+        >
+          <span
+            id="closePortfolioBtn"
+            style="
+              cursor: pointer;
+              font-size: 2.2rem;
+              line-height: 1;
+              color: #aaa;
+              transition: 0.2s;
+              user-select: none;
+            "
+            >&times;</span
+          >
+        </div>
+        <nav class="navbar" id="mainNav">
+          <a href="#" class="nav-link active" data-section="home"
+            ><i class="fas fa-home"></i> Home</a
+          >
+          <a href="#" class="nav-link" data-section="about"
+            ><i class="fas fa-user"></i> About Me</a
+          >
+          <a href="#" class="nav-link" data-section="contact"
+            ><i class="fas fa-envelope"></i> Contact</a
+          >
+        </nav>
+
+        <div class="profile-top">
+          <div class="profile-pic-wrapper">
+            <img
+              src="c:\Users\ronzl\OneDrive\Pictures\Saved Pictures\cover..jfif"
+              alt="Profile portrait"
+              id="profileImg"
+            />
+            <div class="status-dot"></div>
+          </div>
+        </div>
+
+        <div class="intro">
+          <h1>RONIL LIM LAGCO</h1>
+          <h2>BIST</h2>
+          <h2>23-002428</h2>
+          <div class="title">
+            <i class="fas fa-code" style="margin-right: 8px"></i>QA TESTER
+          </div>
+        </div>
+
+        <div id="section-home" class="section active-section">
+          <div class="bio">
+            <p>
+              Hello and welcome! I'm <strong>Ronil Lim Lagco</strong>, an
+              aspiring Quality Assurance Tester dedicated to delivering reliable
+              and high-quality software. I have experience in automation
+              testing, locator identification, API testing, and web development.
+              I'm always eager to learn new technologies and improve my skills.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <i class="fab fa-facebook-f"></i>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >facebook</a
+              >
+            </div>
+            <div class="project-card">
+              <i class="fab fa-youtube"></i>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >youtube</a
+              >
+            </div>
+            <div class="project-card">
+              <i class="fab fa-google"></i>
+              <a
+                href="https://www.bing.com/search?q=GOOGLE&gs_lcrp=EgRlZGdlKgYIABBFGDsyBggAEEUYOzIGCAEQABhAMgYIAhBFGDsyBggDEEUYOTIGCAQQLhhAMgYIBRBFGEEyBggGEEUYPDIGCAcQRRg8MgYICBBFGEHSAQgzNjc1ajBqNKgCCLACAQ&FORM=ANAB01&PC=U531"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GOOGLE</a
+              >
+            </div>
+            <div class="project-card">
+              <i class="fas fa-school"></i>
+              <a
+                href="https://golden-success.com/academics"
+                target="_blank"
+                rel="noopener noreferrer"
+                >golden success C</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div id="section-about" class="section">
+          <div class="about-content">
+            <h2><i class="fas fa-user-astronaut"></i> About Me</h2>
+            <p>
+              Hello! I'm <strong>Ronil Lim Lagco</strong>, a Bachelor of
+              Information Systems and Technology (BIST) student with a strong
+              interest in software testing, web development, and technology. I
+              enjoy learning new skills, solving problems, and ensuring that
+              applications function correctly through quality assurance
+              practices. I am continuously improving my knowledge in manual
+              testing, automation testing, API testing, and front-end
+              development. My goal is to become a skilled QA Engineer who
+              contributes to building reliable and user-friendly software.
+            </p>
+            <h2><i class="fas fa-tools"></i> Skills</h2>
+            <ul>
+              <li>
+                <i class="fas fa-check-circle"></i> QA Tester: Manual &amp;
+                Automation
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>API Testing Using Postman
+              </li>
+              <li><i class="fas fa-check-circle"></i> Web Developer</li>
+            </ul>
+            <h2 class="moving-title">
+              <i class="fas fa-fire"></i> My Favorites
+            </h2>
+            <ul>
+              <li>
+                <i class="fas fa-utensils"></i>
+                <strong>Favorite Food:</strong> Chicken Adobo
+              </li>
+              <li>
+                <i class="fas fa-film"></i>
+                <strong>Favorite Movie:</strong> Avengers: Endgame
+              </li>
+              <li>
+                <i class="fas fa-gamepad"></i>
+                <strong>Favorite Game:</strong> Mobile Legends
+              </li>
+              <li>
+                <i class="fas fa-book"></i> <strong>Favorite Book:</strong> Rich
+                Dad Poor Dad
+              </li>
+              <li>
+                <i class="fas fa-music"></i>
+                <strong>Favorite Music:</strong> Pop Music
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="section-contact" class="section">
+          <div class="contact-content">
+            <h2><i class="fas fa-address-card"></i> Contact</h2>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:Ronzlagco12345@gmail.com"
+                >Ronzlagco12345@gmail.com</a
+              >
+              <span class="tag">email</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/nelz62">github.com/nel62</a>
+              <span class="tag">code</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin-in"></i>
+              <a href="https://www.utest.com/">Utest.com</a>
+              <span class="tag">network</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-facebook-f"></i>
+              <a href="https://www.facebook.com/">LagcoRonil</a>
+              <span class="tag">social</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>09077623528</span>
+              <span class="tag">mobile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="Index.js"></script>
+  </body>
+</html>
